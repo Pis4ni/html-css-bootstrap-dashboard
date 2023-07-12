@@ -15,6 +15,56 @@
         <title>Document</title>
     </head>
     <body>
-        
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid align-items-center flex-nowrap">
+                    <!-- * logo mobile -->
+                    <a class="navbar-brand my-0 p-0 d-md-none" href="#">
+                        <img src="img/mobile-logo.png" alt="Logo" width="45" height="40" class="m-0 p-0">
+                    </a>
+                    <!-- * logo full-w -->
+                    <a class="navbar-brand d-none d-md-inline-block" href="#">
+                        <img src="img/logo.svg" alt="Logo" class="d-inline-block align-text-top">
+                    </a>
+                    <!-- * search-bar -->
+                    <form class="d-flex container-fluid" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="d-flex">
+                        <ul class="list-group list-group-horizontal d-none d-md-flex">
+                            <li class="list-group-item border-0 ">
+                                <a href="#" class="text-dark">
+                                    <i class="fa-solid fa-list"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-0 ">
+                                <a href="#" class="text-dark">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </a>
+                            </li>
+                            <li class="list-group-item border-0 ">
+                                <a href="#" class="text-dark">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--* dropdown  -->
+                        <div class="btn-group">
+                            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="fa-solid fa-bell text-warning"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                              <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- * links -->
+                </div>
+            </nav>
+        </header>
     </body>
 </html>
