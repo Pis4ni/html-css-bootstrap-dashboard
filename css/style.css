@@ -1,3 +1,18 @@
+
+#header{
+
+}
+
+#body{
+    height: calc(100vh - 56px);
+}
+
 #l-nav{
     background-color:#142a40 ;
+    min-width: 200px
+    
+}
+
+.color_pill1{
+    background-color: #165bba;
 }
