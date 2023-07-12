@@ -6,10 +6,10 @@
 #body{
     height: calc(100vh - 56px);
 }
-
+#link-list a,
 #l-nav{
     background-color:#142a40 ;
-    min-width: 200px
+    min-width: 120px
     
 }
 
