@@ -1,7 +1,4 @@
 
-#header{
-
-}
 
 #body{
     height: calc(100vh - 56px);
@@ -12,7 +9,12 @@
     min-width: 120px
     
 }
-
+#display{
+    flex-grow: 1;
+}
 .color_pill1{
     background-color: #165bba;
+}
+.orange_dot{
+    background-color: #f26551;
 }
