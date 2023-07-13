@@ -72,20 +72,39 @@
         <main id="main " class="h-100">
             <div class="d-flex h-100">
 
-                <!--* ------ nav ------ -->
-                <nav class="h-100" id="l-nav" class="">
-                    
+                <!--* ------ main-nav ------ -->
+                <nav class="h-100" id="l-nav">
+                    <div class="container-fluid d-flex flex-column h-100 text-white py-3">
+                        <div class="my-2">
+                            <i class="fa-solid fa-home"></i> <span class="d-none d-md-inline">Home</span>
+                        </div>
+                        <div class="my-2">
+                            <i class="fa-solid fa-chart-simple fa-xl"></i> <span class="d-none d-md-inline">Stats</span>
+                        </div>
+                        <div class="my-2">
+                            <i class="fa-solid fa-signal"></i> <span class="d-none d-md-inline">Signal</span>
+                        </div>
+                        <div class="mt-auto ">                            
+                            <i class="fa-solid fa-signal"></i> <span class="d-none d-md-inline">Signal</span>
+                        </div>
+                    </div>
+
+
+
+<!--main tirdh version                    
+
+
                     <div class="list-group" id="link-list">
-                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-white" aria-current="true">
-                            <i class="fa-solid fa-home me-3"></i>&nbsp;Home
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-white " aria-current="true">
+                            <i class="fa-solid fa-home me-3"></i>&nbsp;<span class="d-none d-md-inline-block">Home</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-white">
-                            <i class="fa-solid fa-chart-simple fa-xl me-3"></i>&nbsp;Stats
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-white" >
+                            <i class="fa-solid fa-chart-simple fa-xl me-3"></i>&nbsp;<span class="d-none d-md-inline-block">Stats</span>
                         </a>
-                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-white">
-                            <i class="fa-solid fa-signal me-3"></i>&nbsp;Signal   
+                        <a href="#" class="list-group-item list-group-item-action border-0 rounded-0 text-white ">
+                            <i class="fa-solid fa-signal me-3"></i>&nbsp;<span class="d-none d-md-inline-block">Signal</span>
                         </a>
-                      </div>
+                      </div> -->
 
 
 <!--main       secondary version              
@@ -109,9 +128,9 @@
                       </ul> -->
                 </nav>
 
-                <!--* ------ main ------ -->
-                <div id="display">
-                    <!--*----- heading info----- -->                    
+                <!--* ------ main-display ------ -->
+                <div id="display" class="overflow-auto overflow-lg-hidden">
+                    <!--*----- main heading info----- -->                    
                     <div class="bg-primary w-100 d-flex justify-content-between align-items-start text-white p-2 ">
                         <div class="flex-shrink-1" >
                             <span class="h2">Boolean</span>
@@ -136,17 +155,20 @@
                         </div>
                     </div>
                 
-                    <!--* ------ main ------ -->
+                    <!--* ------ main content ------ -->
                     <div class="container-fluid my-3">
-                        <div class="row">
-                            <div class="col">
+                        <!-- * row -->
+                        <div class="row flex-column flex-lg-row gap-1">
+                            <!-- * col -->
+                            <div class="col h-100">
                                 <!--* table -->
-                                <div class="card">
+                                <div class="card m-3 h-100">
                                     <h5 class="card-header">
                                         Prossime Classi
                                     </h5>
                                     <div class="card-body">
                                         <div class="table-responsive">
+                                            <!-- * table -->
                                             <table class="table">
                                                 <thead>
                                                     <tr class="text-uppercase small">
@@ -339,7 +361,90 @@
                                           </div>
                                     </div>
                                   </div>
+                                <div class="card m-3 h-100">
+                                    <h5 class="card-header">
+                                        F.A.Q.
+                                    </h5>
+                                    <div class="card-body">
+                                        <div class="accordion accordion-flush" id="accordionFlushFaq">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushFaq">
+                                                <div class="accordion-body"> Clicca sul pulsante " <span class="rounded border border-2"><i class="fa-solid fa-plus"></i></span> " quà sopra .</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                  Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Clicca sull' icona " <i class="fa-solid fa-bell text-warning"></i> "</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    </div>
+                                  </div>
+
                             </div>
+                            <!-- * col -->
+                            <div class="col">
+                                <!--* check-list -->
+                                <div class="card m-3">
+                                    <h5 class="card-header">
+                                        Todo
+                                    </h5>
+                                    <div class="card-body">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                              <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                              <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                                            </li>
+                                            <li class="list-group-item">
+                                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                              <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                            </li>
+                                          </ul>
+                                    </div>
+                                  </div>
+                                  <div class="card m-3 ">
+                                    <div class="card-body">
+                                        <div class="container-fluid">
+                                            <img src="./img/stats.jpeg" class="img-fluid" alt="">
+                                            <h5 class="">Utenti attivi</h5>
+                                            <h6 class=" mb-2 text-body-secondary">lista degli utenti in piattaforma attivi nell' ultimo mese</h6>
+                                        </div>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Gennaio: 1200</li>
+                                            <li class="list-group-item">Febbraio: 800</li>
+                                            <li class="list-group-item">Marzo: 1500</li>
+
+                                          </ul>
+                                    </div>
+                                  </div>
+
+                            </div>
+                            
+
                         </div>
                     </div>
                 </div>

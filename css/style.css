@@ -1,20 +1,25 @@
 
-
 #body{
     height: calc(100vh - 56px);
 }
+
 #link-list a,
 #l-nav{
     background-color:#142a40 ;
-    min-width: 120px
-    
+    background-image: url(../img/sidebar-bg.png);  
+    min-width: fit-content;
 }
+
 #display{
     flex-grow: 1;
+    background-color: #c1c1c1;
+
 }
+/*! colors utils */
 .color_pill1{
     background-color: #165bba;
 }
+
 .orange_dot{
     background-color: #f26551;
 }
